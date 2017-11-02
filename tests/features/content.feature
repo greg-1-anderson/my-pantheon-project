@@ -5,7 +5,6 @@ Feature: Content
 
   @api
   Scenario: Create many nodes
-    Given I am logged in as a user with the "administrator" role
-    And I have run the drush command "cr"
-    When I go to "admin/reports/status"
-    Then I should see "nginx"
+    Given I have run the drush command "cr"
+    When I go to "/"
+    Then I should see "Welcome"
