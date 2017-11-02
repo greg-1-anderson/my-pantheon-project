@@ -5,6 +5,6 @@ Feature: Content
 
   Scenario: Create many nodes
     Given I am logged in as a user with the "administrator" role
-    And I run the drush command "cr"
+    I have run the drush command "cr"
     When I go to "admin/reports/status"
     Then I should see "nginx"
